@@ -57,12 +57,12 @@ public class EmployeeTest {
 
     @Test
     public void goodRaise(){
-        assertEquals("Here's yer raise", employee.raiseSalary(1.4));
+        assertEquals("Here's your raise", employee.raiseSalary(1.4));
     }
 
     @Test
     public void notAGoodRaise(){
-        assertEquals("Dinny hink sae, thats no a raise, like.", employee.raiseSalary(0.1));
+        assertEquals("That is not a raise", employee.raiseSalary(0.1));
     }
 
 

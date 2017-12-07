@@ -4,9 +4,9 @@ package Staff;
 
 public class Employee {
 
-    private String name;
-    private String NINumber;
-    public int salary;
+    protected String name;
+    protected String NINumber;
+    protected int salary;
 
     public Employee(String name, String NINumber, int salary){
         this.name = name;
@@ -38,15 +38,14 @@ public class Employee {
         this.salary = salary;
     }
 
-
     public String raiseSalary(double inputRaise){
         if (inputRaise > 1.0) {
             this.salary *= inputRaise;
-            return "Here's yer raise";
+            return "Here's your raise";
         }
         else
         {
-            return "Dinny hink sae, thats no a raise, like.";
+            return "That is not a raise";
         }
     }
 
