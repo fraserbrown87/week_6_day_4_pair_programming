@@ -39,8 +39,15 @@ public class Employee {
     }
 
 
-    public void raiseSalary(double inputRaise){
+    public String raiseSalary(double inputRaise){
+        if (inputRaise > 1.0) {
             this.salary *= inputRaise;
+            return "Here's yer raise";
+        }
+        else
+        {
+            return "Dinny hink sae, thats no a raise, like.";
+        }
     }
 
 
