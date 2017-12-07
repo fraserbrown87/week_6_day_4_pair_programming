@@ -6,7 +6,7 @@ public class Employee {
 
     private String name;
     private String NINumber;
-    private int salary;
+    public int salary;
 
     public Employee(String name, String NINumber, int salary){
         this.name = name;
@@ -40,7 +40,7 @@ public class Employee {
 
 
     public void raiseSalary(double inputRaise){
-       this.salary *= inputRaise;
+            this.salary *= inputRaise;
     }
 
 
