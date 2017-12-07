@@ -40,12 +40,13 @@ public class Employee {
 
 
     public void raiseSalary(double inputRaise){
-        this.salary *= inputRaise;
+       this.salary *= inputRaise;
     }
 
 
-    public void payBonus(){
+    public int payBonus(){
         int bonus = this.salary / 100;
+        return bonus;
     }
 
 }

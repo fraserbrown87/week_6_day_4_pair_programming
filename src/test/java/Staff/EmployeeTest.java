@@ -40,17 +40,23 @@ public class EmployeeTest {
 
     @Test
     public void getSalary() {
+        assertEquals(23000, employee.getSalary());
     }
 
     @Test
     public void setSalary() {
+        employee.setSalary(24000);
+        assertEquals(24000, employee.getSalary());
     }
 
     @Test
     public void raiseSalary() {
+        employee.raiseSalary(1.10);
+        assertEquals(25300, employee.getSalary());
     }
 
     @Test
     public void payBonus() {
+        assertEquals(230, employee.payBonus());
     }
 }
